@@ -8,22 +8,22 @@ app.get('/', (req,res) => {
 app.get('/clients', (req,res) => {
         const clients = [
             {
-                "id" : 123,
+                "id" : 987,
                 "name" : "Katia - Raio de Sol",
                 "phone" : "(16)99999-9999"
             },
             {
-                "id" : 234,
+                "id" : 876,
                 "name" : "Glória - Familia",
                 "phone" : "(16)99999-9999"
             },
             {
-                "id" : 345,
+                "id" : 765,
                 "name" : "Josiane - Igreja",
                 "phone" : "(16)99999-9999"
             },
             {
-                "id" : 456,
+                "id" : 654,
                 "name" : "Cleide - Externo",
                 "phone" : "(16)99999-9999"
             }
@@ -34,25 +34,25 @@ app.get('/clients', (req,res) => {
 app.get('/products', (req,res) => {
     const products = [
         {
-                "id" : 6308,
+                "id" : 1130,
                 "name" : "Calcinha",
                 "brand" : "Marca 1",
                 "price" : 17.90
             },
             {
-                "id" : 5467,
+                "id" : 2467,
                 "name" : "Conjunto",
                 "brand" : "Marca 2",
                 "price" : 79.90
             },
             {
-                "id" : 5237,
+                "id" : 3237,
                 "name" : "Calcinha",
                 "brand" : "Marca 3",
                 "price" : 13.90
             },
             {
-                "id" : 6187,
+                "id" : 4187,
                 "name" : "Pijama",
                 "brand" : "Marca 4",
                 "price" : 99.90
