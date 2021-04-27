@@ -2,7 +2,7 @@
   "name": "besyssales",
   "version": "1.0.0",
   "description": "Back-End - SysSales",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "dev": "nodemon src/server.js",
     "start" : "node src/server.js"
