@@ -2,8 +2,8 @@ const express = require('express')
 const app = express()
 const cors = require('cors')
 
-app.use(cors({origin: "*"}))
-//https://syssales-git-develop-lucasbrando.vercel.app  
+app.use(cors({origin: "https://syssales-git-develop-lucasbrando.vercel.app"}))
+//  
 app.get('/', (req,res) => {
    res.send("Olá")
 })
