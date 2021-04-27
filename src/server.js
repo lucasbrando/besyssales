@@ -1,6 +1,9 @@
 const express = require('express')
 const app = express()
 
+app.get('/', () => {
+    res.send("Olá")
+})
 
 app.get('/clients', (req,res) => {
     const clients = [
@@ -58,5 +61,5 @@ app.get('/products', (req,res) => {
     return res.json(products)
 })
 
-app.listen(process.env.PORT)
+app.listen(process.env.PORT || 3030)
 
