@@ -4,8 +4,8 @@ const app = express()
 const routes = require('./routes')
 const cors = require('cors')
 
-app.use(cors({origin: "https://syssales-git-develop-lucasbrando.vercel.app"}))
-
+app.use(cors({origin: "*"}))
+//https://syssales-git-develop-lucasbrando.vercel.app
 app.use(express.json());
 app.use(routes)
 
