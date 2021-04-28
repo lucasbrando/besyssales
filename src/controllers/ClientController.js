@@ -3,7 +3,7 @@ const knex = require('../database/db')
 module.exports = {
     async index(req, res) {
         try {
-            const clients = [
+            /*const clients = [
                 {
                     "id" : 987,
                     "name" : "Katia - Raio de Sol",
@@ -26,9 +26,36 @@ module.exports = {
                 }
             ]
             return res.json(clients)
+            */
+            const results = await knex('client')
+            return res.json(results)
+        } catch (error){
+            next(error)
+        }
+    }
+/*
+    async create(req, res) {
+        try {
+
         } catch {
 
         }
     }
+    
+    async update(req, res) {
+        try {
+            
+        } catch {
 
+        }
+    }
+    
+    async delete(req, res) {
+        try {
+            
+        } catch {
+
+        }
+    }       
+*/
 }
