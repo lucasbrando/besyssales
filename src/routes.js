@@ -1,18 +1,18 @@
 const express = require('express')
 const routes = express.Router()
 
-const ClientController = require('./controllers/ClientController')
+const CustomerController = require('./controllers/CustomerController')
 const ProductController = require('./controllers/ProductController')
-const SalesController = require('./controllers/SalesController')
+const SaleController = require('./controllers/SaleController')
 
 // Routes Client
-routes.get('/customers', ClientController.index)
-routes.post('/customers', ClientController.create)
+routes.get('/customers', CustomerController.index)
+routes.post('/customers', CustomerController.create)
 
 //Route Products
 routes.get('/products', ProductController.index)
 
 
 //Route Products
-routes.get('/sales', SalesController.index)
+routes.get('/sales', SaleController.index)
 module.exports = routes
