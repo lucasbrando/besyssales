@@ -1,7 +1,7 @@
 const knex = require('../database/db')
 
 module.exports = {
-    async index(req, res) {
+    async index(req, res, next) {
         try {
             /*const clients = [
                 {
@@ -25,10 +25,15 @@ module.exports = {
                     "phone" : "(16)99999-9999"
                 }
             ]
-            return res.json(clients)
-            */
+            return res.json(clients)*/
+            
             const results = await knex('client')
             return res.json(results)
+            /*
+            const row = client.query('SELECT * FROM client')
+            res.json(row)
+            client.end();*/
+  
         } catch (error){
             next(error)
         }
