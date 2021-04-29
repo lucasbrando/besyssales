@@ -8,7 +8,7 @@ module.exports = {
         } catch (error){
             next(error)
         }
-    }
+    },
 
     async create(req, res) {
         try {
