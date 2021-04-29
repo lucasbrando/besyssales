@@ -3,7 +3,7 @@ const knex = require('../database/db')
 module.exports = {
     async index(req, res, next) {
         try {
-            const results = await knex('client')
+            const results = await knex('customer')
             return res.json(results)
         } catch (error){
             next(error)
@@ -13,7 +13,7 @@ module.exports = {
     async create(req, res) {
         try {
             const { name, phone} = req.body
-            await knex('client').insert({
+            await knex('customer').insert({
                 name,
                 phone
             })

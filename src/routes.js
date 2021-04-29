@@ -6,8 +6,8 @@ const ProductController = require('./controllers/ProductController')
 const SalesController = require('./controllers/SalesController')
 
 // Routes Client
-routes.get('/clients', ClientController.index)
-routes.post('/clients', ClientController.create)
+routes.get('/customers', ClientController.index)
+routes.post('/customers', ClientController.create)
 
 //Route Products
 routes.get('/products', ProductController.index)
