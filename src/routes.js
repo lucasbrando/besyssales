@@ -11,7 +11,7 @@ routes.post('/customers', CustomerController.create)
 
 //Route Products
 routes.get('/products', ProductController.index)
-
+routes.post('/products', ProductController.create)
 
 //Route Products
 routes.get('/sales', SaleController.index)
