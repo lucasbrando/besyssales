@@ -15,4 +15,5 @@ routes.post('/products', ProductController.create)
 
 //Route Products
 routes.get('/sales', SaleController.index)
+routes.post('/sales', SaleController.create)
 module.exports = routes
