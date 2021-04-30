@@ -5,6 +5,9 @@ module.exports = {
     async index(req, res, next) {
         try {
             const results = await knex('sale')
+            .join('customer', 'sale.id_client', '=', 'customer.id_customer')
+            .join('product', 'sale.id_product', '=', 'product.id_product')
+            .select('sale.id_sale', 'customer.name_customer', 'product.name_product', 'sale.sale', 'sale.date_sale', 'sale.price_product', 'sale.created_at')
             return res.json(results)
         } catch (error){
             next(error)
