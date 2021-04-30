@@ -12,7 +12,7 @@ module.exports = {
     async create(req, res, next) {
         try {
             const { id_client, id_product, sale, date_sale, price_product, created_at} = req.body
-            await knex('customer').insert({
+            await knex('sale').insert({
                 id_client,
                 id_product,
                 sale,
