@@ -4,7 +4,8 @@ module.exports = {
 
     async index(req, res, next) {
         try {
-            await res.json({})
+            const results = await knex('sale')
+            return res.json(results)
         } catch (error){
             next(error)
         }
