@@ -16,5 +16,5 @@ routes.post('/products', ProductController.create)
 //Route Products
 routes.get('/sales', SaleController.index)
 routes.post('/sales', SaleController.create)
-routes.get('lastsales', SaleController.lastsale)
+routes.get('/lastsales', SaleController.lastsale)
 module.exports = routes
