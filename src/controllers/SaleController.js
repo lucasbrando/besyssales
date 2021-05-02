@@ -29,5 +29,14 @@ module.exports = {
             next(error)
         }
     },
+    async lastsale(req, res, next) {
+        try {
+            const { maxrows } = req.query
+            const results = await knex('sale').offset(maxrows)
+            return res.json(results)
+        } catch (error) {
+            next(error)
+        }
+    }
 
 }
