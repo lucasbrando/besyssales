@@ -32,7 +32,7 @@ module.exports = {
     async lastsale(req, res, next) {
         try {
             const { maxrows } = req.query
-            const results = await knex('sale').offset(maxrows)
+            const results = await knex('sale').limit(maxrows).offset(maxrows)
             return res.json(results)
         } catch (error) {
             next(error)
